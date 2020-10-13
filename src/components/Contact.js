@@ -10,10 +10,8 @@ function Contact() {
             <div>
                 <h4 className="name">Lucille Owens</h4>
                 <div className="status">
-                    <p className="status-text">{online ? <p className="status-online">online
-                    </p> : 
-                    <p className="status-offline">offline</p>
-                    }</p>
+                    <div className="status-online"></div>
+                        <p className="status-text">{online ? "online" : "offline"}</p>
                 </div>
             </div>
         </div>

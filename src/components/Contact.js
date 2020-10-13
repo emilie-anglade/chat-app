@@ -1,17 +1,15 @@
 import React from 'react';
 import './Contact.css';
 
-const online = true;
-
-function Contact() {
+function Contact(props) {
     return(
         <div className="Contact">
-            <img className="avatar" src="https://randomuser.me/api/portraits/women/45.jpg"/>
+            <img className="avatar" src={props.avatar}/>
             <div>
-                <h4 className="name">Lucille Owens</h4>
+                <h4 className="name">{props.name}</h4>
                 <div className="status">
-                    <div className="status-online"></div>
-                        <p className="status-text">{online ? "online" : "offline"}</p>
+                    <div className={props.online ? 'status-online' : 'status-offline'}></div>
+                    <p className="status-text">{props.online ? "online" : "offline"}</p>
                 </div>
             </div>
         </div>

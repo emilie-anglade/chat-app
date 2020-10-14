@@ -5,10 +5,22 @@
   width: 220px;
   display: flex;
   align-items: center;
+  border: 2px solid white;
+  margin: 2px;
+}
+
+.star {
+  padding: 1em;
+  background: #555;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  border: 2px solid gold;
+  margin: 2px;
 }
 
 /* Contact image */
-.Contact .avatar {
+.avatar {
   border-radius: 50%;
   margin-right: 1em;
   width: 48px;
@@ -16,13 +28,13 @@
 }
 
 /* Name */
-.Contact .name {
+.name {
   margin: 0 0 0.25rem;
   color: #eee;
 }
 
 /* Status text */
-.Contact .status .status-text {
+.status .status-text {
   /*color: #999;*/
   color: black;
   margin: 0;
@@ -30,8 +42,8 @@
 }
 
 /* Status (rounded&colored indicator) */
-.Contact .status .status-online,
-.Contact .status .status-offline {
+.status .status-online,
+.status .status-offline {
   display: inline-block;
   border-radius: 50%;
   width: 8px;
@@ -39,10 +51,10 @@
   margin-right: 6px;
 }
 
-.Contact .status .status-online {
+.status .status-online {
   background: #aed581;
 }
 
-.Contact .status .status-offline {
+.status .status-offline {
   background: #f4511e;
 }

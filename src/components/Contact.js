@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { online: false};
+        this.state = { online: this.props.online};
     }
 
     render() {
